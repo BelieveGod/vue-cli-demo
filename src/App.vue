@@ -1,28 +1,34 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <video-stream></video-stream>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  // import axios from 'axios'
+  import videoStream from './components/videoPlay';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components:{
+    videoStream
+  },
+  data(){
+    return {
+
+    }
+  },
+  methods:{
+
+  },
+  mounted() {
+
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .map {
+    height: 400px;
+    width: 100%;
+  }
+
 </style>
