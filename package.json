@@ -11,11 +11,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11",
     "axios": "^0.21.0",
+    "core-js": "^3.6.5",
     "element-ui": "^2.14.1",
-    "node-rtsp-stream": "0.0.9"
+    "node-rtsp-stream": "0.0.9",
+    "vue": "^2.6.11",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
