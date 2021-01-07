@@ -1,15 +1,15 @@
 <template>
-  <video-stream></video-stream>
+  <div>
+    <span>{{ this.$store.state.count}}</span>
+    <el-button @click="increase">增加</el-button>
+  </div>
 </template>
 
 <script>
-  // import axios from 'axios'
-  import videoStream from './components/videoPlay';
 
 export default {
   name: 'App',
   components:{
-    videoStream
   },
   data(){
     return {
@@ -17,7 +17,10 @@ export default {
     }
   },
   methods:{
-
+    increase(){
+      this.$store.commit('increment');
+      console.log(this.$store.state.count)
+    }
   },
   mounted() {
 
