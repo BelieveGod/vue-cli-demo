@@ -1,20 +1,22 @@
 <template>
   <div>
     <store-test></store-test>
+    <next-tick-test></next-tick-test>
   </div>
 
 </template>
 
 <script>
   import StoreTest from '@/components/StoreTest';
+  import NextTickTest from '@/components/NextTickTest';
 export default {
   name: 'App',
   components:{
-    StoreTest
+    StoreTest,
+    NextTickTest,
   },
   data(){
     return {
-
     }
   },
   computed:{
@@ -22,7 +24,6 @@ export default {
 
   },
   methods:{
-
   },
   mounted() {
 

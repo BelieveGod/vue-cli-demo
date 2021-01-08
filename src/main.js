@@ -12,7 +12,6 @@ Vue.use(ElementUI);
 
 
 
-console.log(store.state.count)
 
 new Vue({
   store,
