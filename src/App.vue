@@ -1,26 +1,28 @@
 <template>
   <div>
-    <span>{{ this.$store.state.count}}</span>
-    <el-button @click="increase">增加</el-button>
+    <store-test></store-test>
   </div>
+
 </template>
 
 <script>
-
+  import StoreTest from '@/components/StoreTest';
 export default {
   name: 'App',
   components:{
+    StoreTest
   },
   data(){
     return {
 
     }
   },
+  computed:{
+
+
+  },
   methods:{
-    increase(){
-      this.$store.commit('increment');
-      console.log(this.$store.state.count)
-    }
+
   },
   mounted() {
 
@@ -32,6 +34,12 @@ export default {
   .map {
     height: 400px;
     width: 100%;
+  }
+
+  .myBox{
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
   }
 
 </style>
