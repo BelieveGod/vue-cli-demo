@@ -1,19 +1,26 @@
 <template>
-  <div>
-    <store-test></store-test>
-    <next-tick-test></next-tick-test>
-  </div>
+<div >
+    <h1>vue-router 示例</h1>
+    <p>
+        <router-link to="/home">go home</router-link>
+        <router-link to="/page1">go home</router-link>
+        <router-link to="/page2">go home</router-link>
+        <router-link to="/user/2">go user</router-link>
+        <router-link to="/user/2/profile">go user</router-link>
+        <router-link to="/user/2/posts">go user</router-link>
+    </p>
+    <p>
+        <el-button @click="toUser">go User</el-button>
+    </p>
+    <router-view></router-view>
+</div>
 
 </template>
 
 <script>
-  import StoreTest from '@/components/StoreTest';
-  import NextTickTest from '@/components/NextTickTest';
 export default {
   name: 'App',
   components:{
-    StoreTest,
-    NextTickTest,
   },
   data(){
     return {
@@ -24,6 +31,9 @@ export default {
 
   },
   methods:{
+      toUser(){
+          this.$router.push('/user/2')
+      }
   },
   mounted() {
 

@@ -1,0 +1,17 @@
+<template>
+    <div>
+        <p>你好{{$route.params.id}}</p>
+        <router-view></router-view>
+
+    </div>
+</template>
+
+<script>
+    export default {
+        name: "User"
+    }
+</script>
+
+<style scoped>
+
+</style>
